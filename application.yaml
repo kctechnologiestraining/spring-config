@@ -5,3 +5,10 @@ spring:
 eureka:
   instance:
     instance-id: ${spring.application.name}:${server.port:9090}
+    prefer-ip-address: true
+
+eureka:
+  server:
+    enable-self-preservation: false
+    wait-time-in-ms-when-sync-empty: 0
+
